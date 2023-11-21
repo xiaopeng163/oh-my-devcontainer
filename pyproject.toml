@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "oh-my-devcontainer"
+version = "0.1.0"
+description = ""
+authors = ["Peng Xiao <xiaoquwl@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+oh-my-devcontainer = "oh_my_devcontainer.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
